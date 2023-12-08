@@ -116,6 +116,7 @@ body{
     align-items: center;
 
 }
+
 .logo .O{
     color:white;
     font-size: 8vh;
@@ -212,11 +213,11 @@ input:focus{
 
 header{
     position: relative;
-    top:0px;
+    top:-17px;
     left:0px;
     width: 95vw;
     font-family: 'Poppins',sans-serif;
-    padding:20px 50px;
+    padding:29px 50px;
     display: flex;
     margin-top: 2vh;
     height: 2vh;
@@ -259,6 +260,207 @@ header{
     transform-origin: left ;
     transform:scaleX(1)
 }
+.button-list {
+    position: absolute;
+    top: 61px; /* Added units */
+    left:0px; /* Added units */
+    height: 100%; /* Added units */
+    width: 20%;
+    background-color: #fdfbfb;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px; /* Adjust padding as needed */
+    /* border-right: 2px solid orange; Adding a border to the right */
+    
+  }
+  
+  
+  /* Style for the buttons */
+  .button-list button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 5px; /* Adjust margin as needed */
+    background-color: #fefefe;
+    color: rgb(2, 2, 2);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 10px;
+
+   
+  }
+  
+  /* Hover effect */
+  .button-list button:hover {
+    background-color: rgb(252, 220, 159);
+    color:rgb(194, 30, 30);
+  }
+  .search-container {
+    left: 0px;
+    position:relative;
+    top:50px;
+    left:500px; /* Align to the right */
+    /* box-shadow: 0 20px 20px rgb(248, 194, 93); */
+  }
+
+  .search-container input[type="text"] {
+    /* align-items:right ; */
+    padding: 10px;
+    width: 700px; /* Adjust width as needed */
+    border-radius: 5px;
+    border: 4px solid #020202;
+    margin-right: 5px;
+    box-shadow: 0 5px 5px rgb(248, 194, 93);
+}
+ /* ***********************************************************   
+  } */
+  
+  .search-container button[type="submit"] {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .search-container button:hover[type="submit"]{
+    background-color: white;
+    color: black;
+    
+  }
+  .button-row {
+ 
+    position: absolute;
+    display: flex;
+    top: 55%; /* Adjust this value to center vertically */
+    left: 30%;
+   max-width: fit-content;
+    text-align: center;
+   
+  }
+  .hover-button {
+    padding: 10px 20px;
+    margin: 5px;
+    width: 150px;
+    background-color: rgba(245, 239, 239, 0.3);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 0px solid #030005;
+    border-radius: 5px;
+  }
+  
+  /* Hover effect */
+  .hover-button:hover {
+    background-color:rgb(252, 220, 159);
+    color:rgb(194, 30, 30);
+  }
+  
+  
+
+  ul{
+    text-align: center;
+}
+.page-container {
+    position: relative; /* Required for absolute positioning */
+    width: 100%;
+    height: 100%;
+    /* Add other styles for the page container */
+  }
+  
+  .slideshow-container {
+    position: absolute;
+    top: 40%; /* Adjust this value to center vertically */
+    left: 60%; /* Adjust this value to center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust or remove the width and height restrictions */
+    width: 850px;
+    height: 200px;
+    /* Add other styles for the slideshow */
+  }
+  
+  .slide {
+    display: none;
+    /* Set dimensions for the slides */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire slide */
+  }
+  
+    
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: black;
+      color: orange;
+      font-size: 20px;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .prev {
+      left: 0;
+    }
+    
+    .next {
+      right: 0;
+    }
+  
+    .boxes{
+      z-index: 3;
+      padding: 5px;
+      gap:20px;
+      /* background-color: white; */
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      left:90%;
+      top:90%;
+      height:450px;
+      width: 80%;
+  }
+  
+  .animal {
+      /* position: absolute;
+      top:10%; */
+      background-color: white;
+      width: 700px;
+      margin: 20px;
+      padding: 20px;
+      border: 1px black;
+      box-shadow: 0 0 20px rgb(214, 138, 214);
+      text-align: center;
+      border-radius: 20px;
+  
+  }
+  
+  .boximg{
+      width: 300px;
+      height: 200px;
+      border-radius: 20px;
+  }
+  
+  .allboxes{
+    position: absolute;
+    top: -10px;;
+  }
+  
+  .underimage{
+    text-align: left;
+  
+  }
+  
 .homepagecontent{
     display: flex;
     align-items: center;
