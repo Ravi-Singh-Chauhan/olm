@@ -226,6 +226,7 @@ header{
     z-index: 99;
     background-color: white;
     color: black;
+    
 }
 
 .logo2{
@@ -417,49 +418,97 @@ header{
       right: 0;
     }
   
-    .boxes{
-      z-index: 3;
-      padding: 5px;
-      gap:20px;
-      /* background-color: white; */
-      position: relative;
+    .containercources1 {
+      
+     
+      width: 20%;
+      height: 30%;
+      position: absolute;
+       background-color: rgba(245, 239, 239, 0.3);
+      box-shadow: 0 0 20px rgb(245, 199, 94);
+      color: white;     
+      /* left:50%; */
       display: flex;
-      justify-content: space-between;
-      left:90%;
-      top:90%;
-      height:450px;
-      width: 80%;
-  }
-  
-  .animal {
-      /* position: absolute;
-      top:10%; */
-      background-color: white;
-      width: 700px;
-      margin: 20px;
-      padding: 20px;
-      border: 1px black;
-      box-shadow: 0 0 20px rgb(214, 138, 214);
+      top:65%;
+      left:30%;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 15px;
+
+    }
+    .containercources2 {
+      
+     
+      width: 20%;
+      height: 30%;
+      position: absolute;
+       background-color: rgba(245, 239, 239, 0.3);
+      box-shadow: 0 0 20px rgb(245, 199, 94);
+      color: white;
+      /* left:50%; */
+      display: flex;
+      top:65%;
+      left:52%;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 15px;
+    }
+    .containercources3 {
+      
+     
+      width: 20%;
+      height: 30%;
+      position: absolute;
+       background-color: rgba(245, 239, 239, 0.3);
+      box-shadow: 0 0 20px rgb(245, 199, 94);
+      color: white;
+      /* left:50%; */
+      display: flex;
+      top:65%;
+      left:74%;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 15px;
+    }
+    
+    
+    .ccimg {
+      margin: 5px;
+      width:90% ;
+      align-items: center;
+      margin-top: 15px;
+      border-radius: 15px;
+
+    }
+    
+    .info {
       text-align: center;
-      border-radius: 20px;
-  
-  }
-  
-  .boximg{
-      width: 300px;
-      height: 200px;
-      border-radius: 20px;
-  }
-  
-  .allboxes{
-    position: absolute;
-    top: -10px;;
-  }
-  
-  .underimage{
-    text-align: left;
-  
-  }
+    }
+    .cc-button {
+      align-items:left;
+      padding: 10px 20px;
+      margin: 5px;
+      width: 100px;
+      background-color:rgb(205, 251, 205);
+      color:black;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: 0px solid #030005;
+      border-radius: 5px;
+    }
+
+    .cci-button {
+      align-items:left;
+      padding: 10px 20px;
+      margin: 5px;
+      width: 100px;
+      background-color:rgb(193, 190, 245);
+      color:black;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: 0px solid #030005;
+      border-radius: 5px;
+    }
   
 .homepagecontent{
     display: flex;
