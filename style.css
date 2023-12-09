@@ -11,6 +11,7 @@ body {
     width: 100vw;
     background-color: var(--dark);
     overflow: hidden;
+    font-family: 'Poppins', sans-serif;
     
 }
 
@@ -238,7 +239,7 @@ header {
     top: 0px;
     left: 0px;
     width: 95vw;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     padding: 20px 50px;
     display: flex;
     margin-top: 2vh;
@@ -332,7 +333,7 @@ header {
     color: white;
     justify-content: center;
     border-radius: 20px;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-size: 4vh;
     font-weight: 500;
     text-shadow: 0 0 10px rgba(99, 97, 97, 0.8);
@@ -368,7 +369,7 @@ header {
 .city p{
     color: black;
     display: inline;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     font-weight: 500;
     margin-left: 0.5vh;
@@ -384,7 +385,7 @@ header {
     border-radius: 4vh;
     background-color: white;
     display: flex;
-    font-family: 'Poppins', sans-serif;
+    
     align-items: center;
     justify-content:center;
     box-shadow: 0 11px 11px #FCAF3C;
@@ -397,9 +398,144 @@ header {
 .Study{
     height: 99vh;
     width: 100vw;
-    /* position: absolute; */
     display: none;
-    border: 2px solid red;
+    position: absolute;
+    top:9vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.batchinfobacground{
+    height: 10vh;
+    width: 60vw;
+    position: absolute;
+    top: 7vh;
+    background-image: url("./src/images/normal-header.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 3vh;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    
+}
+.batchinfobacground h2{
+    margin-left:3vh;
+}
+
+.batchinfotabs{
+    height: 5vh;
+    position: absolute;
+    width: 60vw;
+    user-select: none;
+    cursor: pointer;
+    top:17vh;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+.batchinfotabs p{
+    margin-left: 2vh;
+}
+.selectedTabInfo{
+    height: 35vh;
+    width: 60vw;
+    border: 2px solid rgb(112, 116, 116);
+    position: absolute;
+    top:25vh;
+    border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    background: white;
+}
+
+
+.Descriptiontab p{
+    font-size: 2vh;
+    font-weight: 500;
+    margin-left: 1vh;
+    margin-top: 1vh;
+}
+.details{
+    height: 6vh;
+    width: 20vw;
+    display: flex;
+    margin-left: 1vh;
+    margin-top: 1vh;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+}
+.details .image{
+    margin-left: .1vh;
+    margin-top: .1vh;
+    height: 90%;
+    width: 15%;
+
+}
+.bigright {
+    height: 100%;
+    width: 100%;
+}
+.div1, .div2{
+    height: 50%;
+    width: 100%;
+    margin-left:1vh;
+}
+.div1{
+    color: #7c7373;
+}
+.div2{
+    font-size:1.5vh;
+    font-weight:500;
+}
+.Descriptiontab{
+    display: none;
+}
+.All_classestab{
+    display: none;
+}
+.All_classestab p{
+    margin:0vh 2vh;
+    font-size:3vh;
+    font-weight: 600;   
+}
+.subheading{
+    margin-left:2vh;
+    margin-top:1vh;
+    font-size: 1.5vh;
+}
+.buttonsWrapper{
+    display: flex;
+}
+
+.subjectbtns{
+    height: 6vh;
+    width: 12vw;
+    margin-left: 2vh;
+    margin-top: 3vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 1.5vh;
+    display: flex;
+}
+.img{
+    height: 95%;
+    width: 35%;
+    align-items: center;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.Teststab{
+    display: none;
+}
+.Announcementstab{
+    display: none;
 }
 .Library{
     height: 99vh;
@@ -409,13 +545,15 @@ header {
     border: 2px solid white;
 }
 
+
 .Batches{
     height: 99vh;
-    /* position: absolute; */
     display: none;
     width: 100vw;
     border: 2px solid rgb(0, 255, 200);
 }
+
+
 .Contact_Us{
     height: 99vh;
     width: 100vw;

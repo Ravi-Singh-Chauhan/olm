@@ -4,7 +4,7 @@ const phone_number = document.querySelector(".phonenumber")
 const homepage = document.querySelector(".HomePage")
 const mainpage = document.querySelector(".main");
 
-mainpage.style.left = mainpage.style.left === '-100%' ? '0' : '  -100%';
+// mainpage.style.left = mainpage.style.left === '-100%' ? '0' : '  -100%';
 login_btn.addEventListener("click", () => {
     mainpage.style.left = mainpage.style.left === '-100%' ? '0' : '-100%';
 })
@@ -34,4 +34,21 @@ navItem.forEach((element) => {
         new_active.classList.add("active")
     })
 
+})
+
+let batchItems = document.querySelectorAll(".batchItems");
+batchItems.forEach((element)=>{
+    element.addEventListener("click",()=>{
+        let last_batch_tab = document.querySelector(".b-active");
+        last_batch_tab.classList.remove("b-active");
+        last_batch_tab.style.display="none";
+        let new_Tab = document.querySelector("."+element.innerHTML+"tab");        
+        new_Tab.classList.add("b-active");
+        new_Tab.style.display="block";
+        let rmcolor = document.querySelector(".removeclr");
+        rmcolor.classList.remove("removeclr");
+        rmcolor.style.color="black"
+        element.style.color="blue";
+        element.classList.add("removeclr");
+    })
 })
