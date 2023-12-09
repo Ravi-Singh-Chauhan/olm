@@ -1,29 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-:root{
-    --dark:#001220;
-    --org:#FBAE3C
+
+:root {
+    --dark: #001220;
+    --org: #FBAE3C
 }
-body{
+
+body {
     height: 100vh;
     width: 100vw;
     background-color: var(--dark);
     overflow: hidden;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.main{
+.main {
     display: flex;
     position: relative;
-    left:0;
+    left: 0;
     transition: all 1s ease;
 }
 
-.loginpage{
+.loginpage {
     display: flex;
     position: absolute;
     height: 100vh;
@@ -37,68 +39,73 @@ body{
     transition: all 1s ease-out;
 }
 
-.container{
+.container {
     overflow: hidden;
     height: 80vh;
     width: 60vw;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    display:flex;
+    display: flex;
     color: white;
     backdrop-filter: blur(15px);
 }
 
-.images{
+.images {
     height: 100%;
     width: 50%;
     position: relative;
-    display:flex;
+    display: flex;
     overflow: hidden;
     transition: all 1s ease;
 }
 
-.imgs{
+.imgs {
     height: 100%;
     width: 100%;
     position: absolute;
-    animation: slideAnimation 24s infinite ease-out; 
+    animation: slideAnimation 24s infinite ease-out;
 }
 
 .imgs:nth-child(1) {
-  animation-delay: 4s;
+    animation-delay: 4s;
 }
 
 .imgs:nth-child(2) {
-  animation-delay: 10s;
+    animation-delay: 10s;
 }
 
 .imgs:nth-child(3) {
-  animation-delay: 16s; 
+    animation-delay: 16s;
 }
 
 @keyframes slideAnimation {
-  0%, 100% {
-    transform: translateX(100%);
-  }
-  25%, 75% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-100%);
-  }
+
+    0%,
+    100% {
+        transform: translateX(100%);
+    }
+
+    25%,
+    75% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
 }
 
 
-.unactive{
+.unactive {
     display: none;
 }
 
 
-.moveright{
+.moveright {
     transform: translateX(200%);
 }
 
-.formdiv{
+.formdiv {
     display: flex;
     height: 80%;
     width: 50%;
@@ -106,10 +113,11 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-.logo{
+
+.logo {
     position: relative;
     height: 14vh;
-    width:14vh;
+    width: 14vh;
     border-radius: 50%;
     background-color: black;
     display: flex;
@@ -117,32 +125,37 @@ body{
     align-items: center;
 
 }
-.logo .O{
-    color:white;
+
+.logo .O {
+    color: white;
     font-size: 8vh;
     font-family: "Ubuntu";
 }
-.logo .L{
+
+.logo .L {
     color: white;
-    font-size:3vh;
+    font-size: 3vh;
     font-weight: 800;
     font-family: "Ubuntu";
 }
-.welcome{
+
+.welcome {
     margin-top: 2vh;
     font-size: 3vh;
 }
-.org{
+
+.org {
     font-family: "Ubuntu";
     font-size: 4vh;
     font-weight: 700;
     margin-top: 2vh;
 }
-.inputbox{
+
+.inputbox {
     height: 6vh;
     width: 80%;
     border-radius: 20px;
-    border:0px;
+    border: 0px;
     margin-top: 1vh;
     overflow: hidden;
     display: flex;
@@ -151,57 +164,63 @@ body{
     position: relative;
     background-color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1);
-    
+
 }
-.flag{
+
+.flag {
     position: absolute;
-    left:1vh;
+    left: 1vh;
     width: 5vh;
     height: 2vh;
 }
-.countrycode{
+
+.countrycode {
     position: absolute;
     left: 7vh;
-    color:black ;
-    font-size:2vh;
+    color: black;
+    font-size: 2vh;
     font-weight: bold;
     /* font-weight: 600; */
     font-family: "Ubuntu";
 }
-.phonenumber{
+
+.phonenumber {
     position: absolute;
-    left:12vh;
+    left: 12vh;
     width: 70%;
     height: 80%;
     font-family: "Ubuntu";
-    font-size:2vh;
+    font-size: 2vh;
     border: 0;
 }
-input:focus{
+
+input:focus {
     outline: none;
 }
-.Loginbtn{
+
+.Loginbtn {
     margin-top: 5vh;
-    width:75%;
+    width: 75%;
     height: 9%;
     border-radius: 20px;
     font-family: "Ubuntu";
-    font-size:3vh;
+    font-size: 3vh;
     font-weight: 800;
     background-color: #dcdcdc;
     color: white;
     border: 0;
     box-shadow: 0 7px 11px #5315cf38;
-    transition:  all 0.5s ease;    
+    transition: all 0.5s ease;
 }
-.direction{
+
+.direction {
     margin: 2vh 0vh;
     font-size: 1.5vh;
     font-family: "ubuntu";
 }
 
 
-.homepage{
+.homepage {
     height: 100vh;
     width: 100vw;
     background-image: url("./src/images/blob-scene-2.svg");
@@ -212,13 +231,13 @@ input:focus{
 }
 
 
-header{
+header {
     position: relative;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     width: 95vw;
-    font-family: 'Poppins',sans-serif;
-    padding:20px 50px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 50px;
     display: flex;
     margin-top: 2vh;
     height: 2vh;
@@ -229,27 +248,27 @@ header{
     color: black;
 }
 
-.logo2{
+.logo2 {
     font-size: 2em;
     user-select: none;
 }
 
-.navigation a{
+.navigation a {
     position: relative;
-    color:black;
+    color: black;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
-    margin-left:40px;
+    margin-left: 40px;
     margin-right: 2vh;
 }
 
-.navigation a::after{
-    content:'';
-    position:absolute;
+.navigation a::after {
+    content: '';
+    position: absolute;
     bottom: -6px;
-    width:100%;
-    left:0px;
+    width: 100%;
+    left: 0px;
     height: 3px;
     background-color: black;
     border-radius: 5px;
@@ -257,14 +276,113 @@ header{
     transform-origin: right;
     transition: transform 0.5s;
 }
-.navigation a:hover::after{
-    transform-origin: left ;
-    transform:scaleX(1)
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1)
 }
-.homepagecontent{
+
+.homepagecontent {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    width: 50vh;
+    height: 95vh;
+    width: 100vw;
+}
+
+.libraryimage {
+    position: absolute;
+    top: 10vh;
+    height: 40vh;
+    width: 60vw;
+    background-image: url("./src/images/education.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+
+.darkbox {
+    position: absolute;
+    top: 10vh;
+    height: 40vh;
+    width: 60vw;
+    border-radius: 20px;
+    background-color: black;
+    opacity: .5;
+
+}
+
+.centerinfo {
+    position: absolute;
+    top: 4vh;
+    height: 40vh;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vh;
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(99, 97, 97, 0.8);
+}
+
+.cities {
+    position: absolute;
+    top: 44vh;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60vw;
+}
+
+.city{
+    position: relative;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    width: 10vw;
+    border: 1px solid rgb(102, 102, 101);
+    border-radius: 20px;
+    background: white;
+}
+.city img{
+    height:80%;
+    margin: 5% 3%;
+    width: 35%;
+    border-radius: 15px;
+    
+}
+.city p{
+    color: black;
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    margin-left: 0.5vh;
+    font-size:2vh;
+    
+}
+.atbotoom{
+    position: absolute;
+    height: 20vh;
+    width: 70vw;
+    border: 2px solid rgb(138, 133, 133);
+    bottom: 0;
+    border-radius: 4vh;
+    background-color: white;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content:center;
+    box-shadow: 0 11px 11px #FCAF3C;
+}
+
+.atbotoom P{
+    font-size:6vh;
+    font-weight: bolder;
 }
