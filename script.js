@@ -4,7 +4,7 @@ const phone_number = document.querySelector(".phonenumber")
 const homepage = document.querySelector(".HomePage")
 const mainpage = document.querySelector(".main");
 
-// mainpage.style.left = mainpage.style.left === '-100%' ? '0' : '  -100%';
+mainpage.style.left = mainpage.style.left === '-100%' ? '0' : '  -100%';
 login_btn.addEventListener("click", () => {
     mainpage.style.left = mainpage.style.left === '-100%' ? '0' : '-100%';
 })

@@ -50,7 +50,7 @@
                     <h3 class="navItems">Contact_Us</h3>
                 </nav>
             </header>
-            <div class="homepagecontent active " style="display:flex">
+            <div class="homepagecontent " style="display:none">
                 <div class="libraryimage"></div>
                 <div class="darkbox"></div>
                 <div class="centerinfo">
@@ -83,14 +83,14 @@
                     <p> LEARNING PLATFORM</p>
                 </div>
             </div>
-            <div class="Study">
+            <div class="Study active "style="display:flex">
                 <div class="batchinfobacground">
                     <h2>Your Batch<h2>
                 </div>
                 <div class="batchinfotabs">
                     <p class="batchItems ">Description</p>
-                    <p class="batchItems removeclr" style="color:blue">All_classes</p>
-                    <p class="batchItems">Tests</p>
+                    <p class="batchItems removeclr" style="color:blue" >All_classes</p>
+                    <p class="batchItems "">Tests</p>
                     <p class="batchItems">Announcements</p>
                 </div>
                 <div class="selectedTabInfo"></div>
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="selectedTabInfo All_classestab b-active" style="display: block;" >
+                <div class="selectedTabInfo All_classestab " >
                     <p>Subjects</p>
                     <div class="subheading">Select your subjects & start learning</div>
                     <div class="buttonsWrapper">
@@ -170,8 +170,14 @@
                         
                     </div>
                 </div>
-                <div class="selectedTabInfo Teststab">tests</div>
-                <div class="selectedTabInfo Announcementstab">announcements</div>
+                <div class="selectedTabInfo Teststab b-active" style="display: block;">
+                    <div class="littlesmall">
+                        <p>No tests have been uploaded yet!</p>
+
+                    </div>
+                </div>
+                <div class="selectedTabInfo Announcementstab b-active" style="display: block;">
+                </div>
             </div>
             <div class="Library">Library</div>
             <div class="Batches">Batches</div>

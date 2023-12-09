@@ -534,6 +534,18 @@ header {
 .Teststab{
     display: none;
 }
+.littlesmall{
+    width : 95%;
+    height: 95%;
+    margin: auto;
+    background-color: #a7b3bb63;
+    border-bottom-left-radius: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vh;
+    border-bottom-right-radius: 5vh;
+}
 .Announcementstab{
     display: none;
 }
