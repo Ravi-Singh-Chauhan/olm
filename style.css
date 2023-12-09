@@ -11,6 +11,7 @@ body {
     width: 100vw;
     background-color: var(--dark);
     overflow: hidden;
+    
 }
 
 * {
@@ -233,6 +234,7 @@ input:focus {
 
 header {
     position: relative;
+    user-select: none;
     top: 0px;
     left: 0px;
     width: 95vw;
@@ -253,7 +255,10 @@ header {
     user-select: none;
 }
 
-.navigation a {
+.navigation{
+    display: flex;
+}
+.navigation h3 {
     position: relative;
     color: black;
     text-decoration: none;
@@ -263,7 +268,7 @@ header {
     margin-right: 2vh;
 }
 
-.navigation a::after {
+.navigation h3::after {
     content: '';
     position: absolute;
     bottom: -6px;
@@ -277,18 +282,21 @@ header {
     transition: transform 0.5s;
 }
 
-.navigation a:hover::after {
+.navigation h3:hover::after {
     transform-origin: left;
     transform: scaleX(1)
 }
 
 .homepagecontent {
     display: flex;
-    position: relative;
+    position: absolute;
+    visibility: visible;
     align-items: center;
     justify-content: center;
     height: 95vh;
+    overflow: hidden;
     width: 100vw;
+    border: "0px";
 }
 
 .libraryimage {
@@ -385,4 +393,32 @@ header {
 .atbotoom P{
     font-size:6vh;
     font-weight: bolder;
+}
+.Study{
+    height: 99vh;
+    width: 100vw;
+    /* position: absolute; */
+    display: none;
+    border: 2px solid red;
+}
+.Library{
+    height: 99vh;
+    width: 100vw;
+    position: absolute;
+    display: none;
+    border: 2px solid white;
+}
+
+.Batches{
+    height: 99vh;
+    /* position: absolute; */
+    display: none;
+    width: 100vw;
+    border: 2px solid rgb(0, 255, 200);
+}
+.Contact_Us{
+    height: 99vh;
+    width: 100vw;
+    display: none;
+    border: 2px solid rgb(76, 0, 255);
 }
