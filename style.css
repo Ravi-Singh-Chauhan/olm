@@ -610,7 +610,7 @@ header {
     padding:1vh;
 }
 
-.Library{
+.Companion{
     height: 99vh;
     width: 100vw;
     position: absolute;
@@ -618,6 +618,217 @@ header {
 }
 
 
+.wrapper{
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    height: 95%;
+    width: 99%;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.offer{
+    height: 55%;
+    width: 85%;
+    user-select: none;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.493);
+    border-radius: 1vh;
+}
+
+.justSkele{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    
+}
+.first{
+    margin: 2vh;
+    font-size: 7vh;
+    font-weight: bold;
+    display: flex;
+}
+.bluetext{
+    color: #7363fc;
+}
+.makichut{
+    margin-left: 2vh;
+    font-size: 7vh;
+    font-weight: bold;
+    position: absolute;
+    top: 14vh;
+}
+
+.offerContent{
+    height: 100%;
+    width: 70%;
+}
+.offerImage{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offerImage img{
+    height:35vh;
+}
+
+.specs{
+    margin-top: 2.5vh;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+.btnn{
+    display: flex;
+    height: 8vh;
+    width: 25vh;
+    border-radius: 1vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* border:2px solid goldenrod */
+}
+.svgg{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid blue; */
+
+}
+.svgg svg{
+    height: 100%;
+    width: 85%;
+    
+}
+.contenttt{
+    width: 70%;
+    height: 100%;
+    /* border: 2px solid cyan; */
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 2vh;
+    font-weight: 500;
+    margin-left:.5vh;
+    margin-top: 1vh;
+}
+.descripton{
+    width: 100%;
+    height: 30%;
+    margin-left:.5vh;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1vh;
+}
+.second{
+    position: absolute;
+    margin-top:6vh;
+    margin-left: 2vh;
+
+    font-size: 2vh;
+    color: grey;
+}
+.third{
+    display: flex;
+    margin-top: 18vh;
+    margin-left: 2vh;
+}
+
+.btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17vh;
+    height: 6vh;
+    border-radius: 1vh;
+    font-size: 1.6vh;
+    font-weight: bold;
+    color: white;
+    background-color: #7363fc;
+    border: 2px solid #7363fc;
+}
+.btn2{
+    width: 20vh;
+    height: 6vh;
+    margin-left: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vh;
+    color: #7363fc;
+    font-size:1.5vh;
+    font-weight: bold;
+    border: 3px solid #7363fc;
+}
+.coach{
+    height: 25%;
+    width: 85%;
+    user-select: none;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.493);
+    border-radius: 1vh;
+}
+
+.connect{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.subjectss{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.maths{
+    height: 45%;
+    width: 20%;
+    
+    position: relative;
+}
+.mathsbg{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid gold; */
+    background-color: #f1efff;
+    border-top-left-radius: 15vh;
+    position: absolute;
+    border-bottom-left-radius: 2vh;
+}
+
+.subimage{
+    height: 100%;
+    width: 40%;
+}
+.subimage img{
+    
+    width: 100%;
+}
+.mathsbg .heading{
+    margin-top: 2.5vh;
+    font-size:3vh
+}
 .Batches{
     height: 99vh;
     display: none;
@@ -726,10 +937,11 @@ header {
 
 }
 .upperdivdet{
+    font-size: 1.2vh;
     display: flex;
     align-items: center;
     font-weight: bold;
-    margin-left: 1vh;
+    margin-top: .9vh;
 }
 .priceandbuttons{
     width: 100%;
@@ -984,7 +1196,6 @@ header {
     background: #0d9480;
 }
 
-/* make the form responsive */
 @media (max-width: 1200px)
 {
     .container
