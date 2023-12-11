@@ -5,6 +5,7 @@ const homepage = document.querySelector(".HomePage")
 const mainpage = document.querySelector(".main");
 
 // mainpage.style.left = mainpage.style.left === '-100%' ? '0' : '  -100%';
+
 login_btn.addEventListener("click", () => {
     if(!isNaN(phone_number.value)){
         if(phone_number.value.length>=10){
