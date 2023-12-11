@@ -6,7 +6,11 @@ const mainpage = document.querySelector(".main");
 
 // mainpage.style.left = mainpage.style.left === '-100%' ? '0' : '  -100%';
 login_btn.addEventListener("click", () => {
-    mainpage.style.left = mainpage.style.left === '-100%' ? '0' : '-100%';
+    if(!isNaN(phone_number.value)){
+        if(phone_number.value.length>=10){
+            mainpage.style.left = mainpage.style.left === '-100%' ? '0' : '-100%';
+        }
+    }
 })
 phone_number.addEventListener("input", () => {
     if (!isNaN(phone_number.value)) {
