@@ -410,6 +410,7 @@ header {
     display: none;
     position: absolute;
     top:9vh;
+    font-family:  'Poppins', sans-serif;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1290,7 +1291,7 @@ header {
     top: 0px; /* Added units */
     left:0px; /* Added units */
     height: 100%; /* Added units */
-    width: 20%;
+    width: 15%;
     background-color: #fdfbfb;
     display: flex;
     flex-direction: column;
@@ -1328,7 +1329,9 @@ header {
     left:0px;
     position:absolute;
     top:50px;
-    left:450px; /* Align to the right */
+    margin-top: 1vh;
+    margin-left: 16vh;
+    left:450px;
     /* box-shadow: 0 20px 20px rgb(248, 194, 93); */
   }
 
@@ -1380,19 +1383,21 @@ header {
   
   /* Hover effect */
   .hover-button:hover {
-    background-color:rgb(252, 220, 159);
-    color:rgb(194, 30, 30);
+    background-color: #7363fc;
+    /* background-color:rgb(252, 220, 159); */
+    /* color:rgb(194, 30, 30); */
+    color: white;
   }
   
   .slideshow-container {
     position: absolute;
     top: 30%; /* Adjust this value to center vertically */
-    left: 60%; /* Adjust this value to center horizontally */
+    left: 55%; /* Adjust this value to center horizontally */
     transform: translate(-50%, -50%);
     /* Adjust or remove the width and height restrictions */
     width: 850px;
     height: 200px;
-    /* Add other styles for the slideshow */
+   
   }
   
   .slide {
@@ -1436,33 +1441,34 @@ header {
         height: 10%;
         position: absolute;
         background-color: rgba(245, 239, 239, 0.3);
-        box-shadow: 0 0 20px rgb(245, 199, 94);
+        /* box-shadow: 0 0 20px rgb(245, 199, 94); */
+        backdrop-filter: blur(5px);
         color: white;     
         /* left:50%; */
         display: flex;
         font-size: 20px;
         text-align: left;
         top:55%;
-        left:25%;
+        left:22%;
         padding: 30px;
         flex-direction:row;
+        
         /* align-items: center; */
         border-radius: 15px;
     }
     .containercources2 {
-      
-     
+        backdrop-filter: blur(5px);
         width: 70%;
         height: 10%;
         position: absolute;
         background-color: rgba(245, 239, 239, 0.3);
-        box-shadow: 0 0 20px rgb(245, 199, 94);
+        /* box-shadow: 0 0 20px rgb(245, 199, 94); */
         color: white;     
         /* left:50%; */
         display: flex;
         font-size: 20px;
         top:75%;
-        left:25%;
+        left:22%;
         padding: 30px;
         text-align: left;
         flex-direction: column;
@@ -1499,14 +1505,18 @@ header {
         padding: 10px 20px;
         margin: 5px;
         width:fit-content;
-        background-color:rgb(245, 227, 139);
+        /* background-color:rgb(245, 227, 139); */
         color:black;
         cursor: pointer;
         transition: background-color 0.3s ease;
         border: 0px solid #030005;
         border-radius: 5px;
-      }
-      .cc-button:hover {
-        background-color:rgb(252, 220, 159);
-        color:rgb(194, 30, 30);
+        background-color: rgba(167, 165, 165, 0.527);
+        color: white;
+    }
+    .cc-button:hover {
+        background-color: #7363fc;
+        /* background-color:rgb(252, 220, 159); */
+        /* color:rgb(194, 30, 30); */
+        color: white;
       }
