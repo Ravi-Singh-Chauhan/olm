@@ -403,6 +403,18 @@ header {
     font-size:6vh;
     font-weight: bolder;
 }
+
+.Home{
+    height: 99vh;
+    width: 100vw;
+    display: none;
+    position: absolute;
+    top:9vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .Study{
     height: 99vh;
     width: 100vw;
@@ -689,7 +701,7 @@ header {
 }
 .btnn{
     display: flex;
-    height: 8vh;
+    height:fit-content;
     width: 25vh;
     border-radius: 1vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -753,7 +765,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 17vh;
-    height: 6vh;
+    height: 7vh;
     border-radius: 1vh;
     font-size: 1.6vh;
     font-weight: bold;
@@ -763,7 +775,7 @@ header {
 }
 .btn2{
     width: 20vh;
-    height: 6vh;
+    height: 7vh;
     margin-left: 2vh;
     display: flex;
     align-items: center;
@@ -1272,3 +1284,229 @@ header {
        align-items: center;
     }
 }
+
+.button-list {
+    position: absolute;
+    top: 0px; /* Added units */
+    left:0px; /* Added units */
+    height: 100%; /* Added units */
+    width: 20%;
+    background-color: #fdfbfb;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px; /* Adjust padding as needed */
+    /* border-right: 2px solid orange; Adding a border to the right */
+    
+  }
+  
+  
+  /* Style for the buttons */
+  .button-list button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 5px; /* Adjust margin as needed */
+    background-color: #fefefe;
+    color: rgb(2, 2, 2);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 10px;
+
+   
+  }
+  
+  /* Hover effect */
+  .button-list button:hover {
+    background-color: rgb(252, 220, 159);
+    color:rgb(194, 30, 30);
+  }
+  .search-container {
+    top:0px;
+    left:0px;
+    position:absolute;
+    top:50px;
+    left:450px; /* Align to the right */
+    /* box-shadow: 0 20px 20px rgb(248, 194, 93); */
+  }
+
+  .search-container input[type="text"] {
+    /* align-items:right ; */
+    padding: 10px;
+    width: 700px; /* Adjust width as needed */
+    border-radius: 5px;
+    border: 4px solid #020202;
+    margin-right: 5px;
+    /* box-shadow: 0 5px 5px rgb(248, 194, 93); */
+}
+ /* ***********************************************************   
+  } */
+  
+  .search-container button[type="submit"] {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .search-container button:hover[type="submit"]{
+    background-color: white;
+    color: black;
+  }
+  .button-row {
+ 
+    position: absolute;
+    display: flex;
+    top: 47%; /* Adjust this value to center vertically */
+    left: 30%;
+   max-width: fit-content;
+    text-align: center;
+   
+  }
+  .hover-button {
+    padding: 10px 20px;
+    margin: 5px;
+    width: 150px;
+    background-color: rgba(245, 239, 239, 0.3);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 0px solid #030005;
+    border-radius: 5px;
+  }
+  
+  /* Hover effect */
+  .hover-button:hover {
+    background-color:rgb(252, 220, 159);
+    color:rgb(194, 30, 30);
+  }
+  
+  .slideshow-container {
+    position: absolute;
+    top: 30%; /* Adjust this value to center vertically */
+    left: 60%; /* Adjust this value to center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust or remove the width and height restrictions */
+    width: 850px;
+    height: 200px;
+    /* Add other styles for the slideshow */
+  }
+  
+  .slide {
+    display: none;
+    /* Set dimensions for the slides */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire slide */
+  }
+  
+    
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: black;
+      color: orange;
+      font-size: 20px;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .prev {
+      left: 0;
+    }
+    
+    .next {
+      right: 0;
+    }
+    .containercources1 {
+      
+     
+        width: 70%;
+        height: 10%;
+        position: absolute;
+        background-color: rgba(245, 239, 239, 0.3);
+        box-shadow: 0 0 20px rgb(245, 199, 94);
+        color: white;     
+        /* left:50%; */
+        display: flex;
+        font-size: 20px;
+        text-align: left;
+        top:55%;
+        left:25%;
+        padding: 30px;
+        flex-direction:row;
+        /* align-items: center; */
+        border-radius: 15px;
+    }
+    .containercources2 {
+      
+     
+        width: 70%;
+        height: 10%;
+        position: absolute;
+        background-color: rgba(245, 239, 239, 0.3);
+        box-shadow: 0 0 20px rgb(245, 199, 94);
+        color: white;     
+        /* left:50%; */
+        display: flex;
+        font-size: 20px;
+        top:75%;
+        left:25%;
+        padding: 30px;
+        text-align: left;
+        flex-direction: column;
+        /* align-items: center; */
+        border-radius: 15px;
+
+    }
+
+    .ccimg1 {
+        position: absolute;
+        margin: 5px;
+        width:10% ;
+        top:5%;
+        left:84%;
+        align-items: right;
+        margin-top: 15px;
+        border-radius: 15px;
+  
+      }
+
+      .ccimg2 {
+        position: absolute;
+        margin: 5px;
+        width:10% ;
+        top:5%;
+        left:84%;
+        align-items: right;
+        margin-top: 15px;
+        border-radius: 15px;
+  
+      }
+      .cc-button {
+        /* align-items:i; */
+        padding: 10px 20px;
+        margin: 5px;
+        width:fit-content;
+        background-color:rgb(245, 227, 139);
+        color:black;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: 0px solid #030005;
+        border-radius: 5px;
+      }
+      .cc-button:hover {
+        background-color:rgb(252, 220, 159);
+        color:rgb(194, 30, 30);
+      }
