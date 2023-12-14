@@ -4,8 +4,6 @@ const phone_number = document.querySelector(".phonenumber")
 const homepage = document.querySelector(".HomePage")
 const mainpage = document.querySelector(".main");
 
-// mainpage.style.left = mainpage.style.left === '-100%' ? '0' : '  -100%';
-
 login_btn.addEventListener("click", () => {
     if(!isNaN(phone_number.value)){
         if(phone_number.value.length>=10){
@@ -25,6 +23,7 @@ phone_number.addEventListener("input", () => {
 })
 
 let navItem = document.querySelectorAll(".navItems");
+
 navItem.forEach((element) => {
     element.addEventListener("click", () => {
         let last_Active = document.querySelector(".active");
