@@ -404,7 +404,7 @@ header {
     font-weight: bolder;
 }
 
-.Home{
+/* .Home{
     height: 99vh;
     width: 100vw;
     display: none;
@@ -414,7 +414,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .Study{
     height: 99vh;
